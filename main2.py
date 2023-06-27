@@ -2,15 +2,13 @@ import re
 import easyocr
 import streamlit as st
 import mysql.connector
-from PIL import Image
-import base64
-from io import BytesIO
+
 
 # Create a MySQL connection
 cnx = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Root@7890sql",
+    password="your_password",
     database="business_db"
 )
 cursor = cnx.cursor()
